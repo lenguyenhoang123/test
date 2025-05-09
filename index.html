@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ - Hệ thống Quản lý</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .banner {
+            background: url('https://source.unsplash.com/1600x500/?university,education') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            color: white;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .banner-text {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DNTU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Chuyển đổi menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Quanlybomon.html">Quản lý Bộ môn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Phanquyen.html">Quản lý phân quyền</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Quanlygiangvien.html">Quản lý Giáo viên</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Hocphan.html">Học phần giảng viên</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Lichgiangday.html">Lịch giảng dạy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <!-- Banner Carousel -->
+    <div id="bannerCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner.jpg" class="d-block w-100" alt="Banner 1"
+                    style="max-height: 400px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/dntu.jpg" class="d-block w-100" alt="Banner 2"
+                    style="max-height: 400px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner1.jpg" class="d-block w-100" alt="Banner 3"
+                    style="max-height: 400px; object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Trước</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Tiếp</span>
+        </button>
+    </div>
+
+    <!-- Nội dung giới thiệu -->
+    <div class="container text-center">
+        <h2 class="mb-3">Giới thiệu</h2>
+        <p class="lead">
+            Trường Đại học DNTU là nơi đào tạo chất lượng cao với nhiều khoa, bộ môn đa dạng,
+            đội ngũ giảng viên tâm huyết và hệ thống quản lý thông minh. Chúng tôi cam kết cung cấp môi trường học tập
+            tiên tiến,
+            hiện đại nhằm giúp sinh viên phát triển toàn diện cả về kiến thức lẫn kỹ năng.
+        </p>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h5>Khoa đa dạng</h5>
+                <p>Gồm Kinh tế, Công nghệ, Ngoại ngữ và nhiều hơn nữa.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Giảng viên chuyên môn</h5>
+                <p>Hơn 200 giảng viên với trình độ cao và kinh nghiệm thực tế.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Hệ thống thông minh</h5>
+                <p>Quản lý giảng viên, bộ môn và phân quyền nhanh chóng, dễ dàng.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        &copy; 2025 Trường Đại học DNTU. Mọi quyền được bảo lưu.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
